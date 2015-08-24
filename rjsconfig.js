@@ -14,7 +14,8 @@ var require = {
     'scalejs.mvvm': '../lib/scalejs.mvvm/dist/scalejs.mvvm',
     'knockout.mapping': '../lib/knockout.mapping/knockout.mapping',
     'scalejs.functional': '../lib/scalejs.functional/dist/scalejs.functional.min',
-    text: '../lib/text/text'
+    text: '../lib/text/text',
+    'scalejs.mvvm.views': '../lib/scalejs.mvvm/dist/scalejs.mvvm'
   },
   packages: [
 
