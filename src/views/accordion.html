@@ -1,0 +1,12 @@
+<div id="sj_accordion_template">
+    <h3 data-bind="template: { name: header.template, data: header }, css: header.css, click: header.click"></h3>
+    <div class="pane" data-bind="template: { name: content.template, data: content.data }"></div>
+</div>
+
+<div id="sj_accordion_header_template">
+    <a href="#" data-bind="text: data, event: { keyup: function(d,e) { if(e.keyCode === 13) { click() } } }" />
+</div>
+
+<div id="sj_accordion_content_template">
+    <!-- ko text: $data --><!-- /ko -->
+</div>
