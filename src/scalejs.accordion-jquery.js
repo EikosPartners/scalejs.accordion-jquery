@@ -2,7 +2,7 @@ define([
     'scalejs!core',
     'jquery',
     'knockout',
-    'scalejs.mvvm.views!accordion'
+    'scalejs.mvvm.views!scalejs.accordion-jquery/accordion'
 ], function (
     core,
     $,

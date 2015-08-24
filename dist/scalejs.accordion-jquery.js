@@ -1,12 +1,12 @@
 
-define('text!views/accordion.html',[],function () { return '<div id="sj_accordion_template">\r\n    <h3 data-bind="template: { name: header.template, data: header }, css: header.css, click: header.click"></h3>\r\n    <div class="pane" data-bind="template: { name: content.template, data: content.data }"></div>\r\n</div>\r\n\r\n<div id="sj_accordion_header_template">\r\n    <a href="#" data-bind="text: data, event: { keyup: function(d,e) { if(e.keyCode === 13) { click() } } }" />\r\n</div>\r\n\r\n<div id="sj_accordion_content_template">\r\n    <!-- ko text: $data --><!-- /ko -->\r\n</div>\r\n';});
+define('text!scalejs.accordion-jquery/accordion.html',[],function () { return '<div id="sj_accordion_template">\r\n    <h3 data-bind="template: { name: header.template, data: header }, css: header.css, click: header.click"></h3>\r\n    <div class="pane" data-bind="template: { name: content.template, data: content.data }"></div>\r\n</div>\r\n\r\n<div id="sj_accordion_header_template">\r\n    <a href="#" data-bind="text: data, event: { keyup: function(d,e) { if(e.keyCode === 13) { click() } } }" />\r\n</div>\r\n\r\n<div id="sj_accordion_content_template">\r\n    <!-- ko text: $data --><!-- /ko -->\r\n</div>\r\n';});
 
 
 define('scalejs.accordion-jquery',[
     'scalejs!core',
     'jquery',
     'knockout',
-    'scalejs.mvvm.views!accordion'
+    'scalejs.mvvm.views!scalejs.accordion-jquery/accordion'
 ], function (
     core,
     $,
